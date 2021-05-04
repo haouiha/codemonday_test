@@ -6,9 +6,17 @@ module.exports = {
 			'Courses',
 			[
 				{
-					id: 0,
+					id: -1,
 					course_name: 'Math',
 					course_description: '1+1',
+					onwer_id: 0,
+					createdAt: new Date(),
+					updatedAt: new Date(),
+				},
+				{
+					id: 0,
+					course_name: 'Sci',
+					course_description: 'e=mc2',
 					onwer_id: 0,
 					createdAt: new Date(),
 					updatedAt: new Date(),
