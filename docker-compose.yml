@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+    postgresdb:
+        image: postgres
+        container_name: database_codemonday
+        restart: always
+        environment:
+            POSTGRES_DB: codemonday1
+            POSTGRES_USER: haoui
+            POSTGRES_PASSWORD: 12345678
+        volumes:
+            - ./postgres:/var/lib/postgresql/data
+        ports:
+            - '5432:5432'
+
+    # server:
+    #     container_name: express_server
+    #     build: .
+    #     depends_on:
+    #         - postgresdb
+    #     environment:
+    #         NODE_ENV: development
+    #         PORT: 3000
+    #     ports:
+    #         - '3000:3000'
+    #     command: npm run start
+    #     volumes:
+    #         - .:/app/
+    #         - /app/node_modules
+
+volumes:
+    app-postgresdb:

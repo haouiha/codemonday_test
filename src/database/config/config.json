@@ -1,23 +1,16 @@
 {
 	"development": {
-		"username": null,
-		"password": null,
-		"database": "codemonday",
-		"host": "127.0.0.1",
-		"dialect": "postgres"
-	},
-	"test": {
-		"username": null,
-		"password": null,
-		"database": "codemonday_test",
-		"host": "127.0.0.1",
+		"username": "haoui",
+		"password": 12345678,
+		"database": "codemonday1",
+		"host": "localhost",
 		"dialect": "postgres"
 	},
 	"production": {
-		"username": null,
-		"password": null,
-		"database": "codemonday_production",
-		"host": "127.0.0.1",
+		"username": "haoui",
+		"password": 12345678,
+		"database": "codemonday1",
+		"host": "postgresdb",
 		"dialect": "postgres"
 	}
 }
