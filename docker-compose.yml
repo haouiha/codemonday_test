@@ -13,20 +13,20 @@ services:
         ports:
             - '5432:5432'
 
-    # server:
-    #     container_name: express_server
-    #     build: .
-    #     depends_on:
-    #         - postgresdb
-    #     environment:
-    #         NODE_ENV: development
-    #         PORT: 3000
-    #     ports:
-    #         - '3000:3000'
-    #     command: npm run start
-    #     volumes:
-    #         - .:/app/
-    #         - /app/node_modules
+    server:
+        container_name: express_server
+        build: .
+        depends_on:
+            - postgresdb
+        environment:
+            NODE_ENV: production
+            PORT: 4001
+        ports:
+            - '4001:4001'
+        command: npm run start
+        volumes:
+            - .:/usr/src/app
+            - /usr/src/app/node_modules
 
 volumes:
     app-postgresdb:
